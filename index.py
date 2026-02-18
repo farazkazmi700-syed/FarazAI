@@ -76,179 +76,184 @@
 #Loops and ifelse statments
 
 #Task 01 --Even Number Filter
-# numbers = [1, 2, 3, 4, 5, 6]
+numbers = [1, 2, 3, 4, 5, 6]
 
-# even_numbers = []
-# for num in numbers:
-#     if num % 2 == 0:
-#         even_numbers.append(num)
+even_numbers = []
+for num in numbers:
+    if num % 2 == 0:
+        even_numbers.append(num)
 
-# print(even_numbers)
+print(even_numbers)
 
-# #Task 02 -- Pass / Fail System
+#Task 02 -- Pass / Fail System
 
-# marks = [35, 67, 90, 45, 30]
+marks = [35, 67, 90, 45, 30]
 
-# result = []
-# for mark in marks:
-#     if mark >= 40:
-#         result.append("Pass")
-#     else:
-#         result.append("Fail")
+result = []
+for mark in marks:
+    if mark >= 40:
+        result.append("Pass")
+    else:
+        result.append("Fail")
 
-# print(result)
+print(result)
 
-# #Task 03 Positive & Negative Numbers
-# numbers = [-5, 10, 0, -2, 8]
+#Task 03 Positive & Negative Numbers
+numbers = [-5, 10, 0, -2, 8]
 
-# for num in numbers:
-#     if num > 0:
-#         print(num, "Positive")
-#     elif num < 0:
-#         print(num, "Negative")
-#     else:
-#         print(num, "Zero")
+for num in numbers:
+    if num > 0:
+        print(num, "Positive")
+    elif num < 0:
+        print(num, "Negative")
+    else:
+        print(num, "Zero")
 
-# #Task 04 Name Strings Starting with 'A'
+#Task 04 Name Strings Starting with 'A'
 
-# names = ["Alice", "Bob", "Ankit", "John"]
+names = ["Alice", "Bob", "Ankit", "John"]
 
-# a_names = []
-# for name in names:
-#     if name.startswith('A'):
-#         a_names.append(name)
+a_names = []
+for name in names:
+    if name.startswith('A'):
+        a_names.append(name)
 
-# print(a_names)
+print(a_names)
 
-# #Task 05 Count Even Numbers
+#Task 05 Count Even Numbers
 
-# numbers = [1, 2, 4, 7, 8, 10]
+numbers = [1, 2, 4, 7, 8, 10]
 
-# count = 0
-# for num in numbers:
-#     if num % 2 == 0:
-#         count += 1
+count = 0
+for num in numbers:
+    if num % 2 == 0:
+        count += 1
 
-# print("Even count:", count)
+print("Even count:", count)
 
-# #Task06 Salary Bonus (10% bonus if salary > 50000)
-# salaries = [40000, 60000, 80000]
+#Task06 Salary Bonus (10% bonus if salary > 50000)
+salaries = [40000, 60000, 80000]
 
-# new_salaries = []
-# for salary in salaries:
-#     if salary > 50000:
-#         new_salaries.append(salary * 1.10)
-#     else:
-#         new_salaries.append(salary)
+new_salaries = []
+for salary in salaries:
+    if salary > 50000:
+        new_salaries.append(salary * 1.10)
+    else:
+        new_salaries.append(salary)
 
-# print(new_salaries)
+print(new_salaries)
 
-# #task 07 Remove Empty Strings
-# strings = ["Hello", "", "World", "", "Python"]
+#task 07 Remove Empty Strings
+strings = ["Hello", "", "World", "", "Python"]
 
-# cleaned = []
-# for s in strings:
-#     if s != "":
-#         cleaned.append(s)
+cleaned = []
+for s in strings:
+    if s != "":
+        cleaned.append(s)
 
-# print(cleaned)
+print(cleaned)
 
-# #08 Convert to Uppercase
-# words = ["hello", "world"]
+#08 Convert to Uppercase
+words = ["hello", "world"]
 
-# upper_words = []
-# for word in words:
-#     upper_words.append(word.upper())
+upper_words = []
+for word in words:
+    upper_words.append(word.upper())
 
-# print(upper_words)
+print(upper_words)
 
-# #09 Square Only Odd Numbers
-# numbers = [1, 2, 3, 4, 5]
+#09 Square Only Odd Numbers
+numbers = [1, 2, 3, 4, 5]
 
-# squared_odds = []
-# for num in numbers:
-#     if num % 2 != 0:
-#         squared_odds.append(num ** 2)
+squared_odds = []
+for num in numbers:
+    if num % 2 != 0:
+        squared_odds.append(num ** 2)
 
-# print(squared_odds)
-# #10  Check Prime Numbers
-# numbers = [2, 3, 4, 5, 10, 13]
+print(squared_odds)
+#10  Check Prime Numbers
+numbers = [2, 3, 4, 5, 10, 13]
 
-# for num in numbers:
-#     if num > 1:
-#         for i in range(2, num):
-#             if num % i == 0:
-#                 print(num, "Not Prime")
-#                 break
-#         else:
-#             print(num, "Prime")
-#     else:
-#         print(num, "Not Prime")
-
-
-## List comprehenstion
-
-# #Task 01 --Even Number Filter
-
-# even_numbers = [num for num in numbers if num % 2 == 0]
-# print(even_numbers)
+for num in numbers:
+    if num > 1:
+        for i in range(2, num):
+            if num % i == 0:
+                print(num, "Not Prime")
+                break
+        else:
+            print(num, "Prime")
+    else:
+        print(num, "Not Prime")
 
 
-# #Task 02 -- Pass / Fail System
-# result = ["Pass" if mark >= 40 else "Fail" for mark in marks]
-# print(result)
+# List comprehenstion
+
+#Task 01 --Even Number Filter
+numbers = [1, 2, 3, 4, 5, 6]
+even_numbers = [num for num in numbers if num % 2 == 0]
+print(even_numbers)
 
 
-# #Task 03 Positive & Negative Numbers
-# result = ["Positive" if n > 0 else "Negative" if n < 0 else "Zero" for n in numbers]
-# print(result)
+#Task 02 -- Pass / Fail System
+marks = [35, 67, 90, 45, 30]
+result = ["Pass" if mark >= 40 else "Fail" for mark in marks]
+print(result)
 
 
-# #Task 04 Name Strings Starting with 'A'
-
-# a_names = [name for name in names if name.startswith('A')]
-# print(a_names)
-
-
+#Task 03 Positive & Negative Numbers
+numbers = [-5, 10, 0, -2, 8]
+result = ["Positive" if n > 0 else "Negative" if n < 0 else "Zero" for n in numbers]
+print(result)
 
 
-# #Task 05 Count Even Numbers
-# count = len([num for num in numbers if num % 2 == 0])
-# print("Even count:", count)
+#Task 04 Name Strings Starting with 'A'
+names = ["Alice", "jhon", "Ankit"]
 
 
-# #Task06 Salary Bonus (10% bonus if salary > 50000)
-# new_salaries = [salary * 1.10 if salary > 50000 else salary for salary in salaries]
-# print(new_salaries)
+a_names = [name for name in names if name.startswith('A')]
+print(a_names)
 
 
 
-# #task 07 Remove Empty Strings
-# cleaned = [s for s in strings if s != ""]
-# print(cleaned)
+
+#Task 05 Count Even Numbers
+count = len([num for num in numbers if num % 2 == 0])
+print("Even count:", count)
 
 
-# #08 Convert to Uppercase
-# upper_words = [word.upper() for word in words]
-# print(upper_words)
+#Task06 Salary Bonus (10% bonus if salary > 50000)
+new_salaries = [salary * 1.10 if salary > 50000 else salary for salary in salaries]
+print(new_salaries)
 
 
 
-# #09 Square Only Odd Numbers
+#task 07 Remove Empty Strings
+cleaned = [s for s in strings if s != ""]
+print(cleaned)
 
-# squared_odds = [num ** 2 for num in numbers if num % 2 != 0]
-# print(squared_odds)
+
+#08 Convert to Uppercase
+upper_words = [word.upper() for word in words]
+print(upper_words)
 
 
-# #10  Check Prime Numbers
 
-# def is_prime(n):
-#     if n <= 1:
-#         return False
-#     for i in range(2, n):
-#         if n % i == 0:
-#             return False
-#     return True
+#09 Square Only Odd Numbers
 
-# result = ["Prime" if is_prime(num) else "Not Prime" for num in numbers]
-# print(result)
+squared_odds = [num ** 2 for num in numbers if num % 2 != 0]
+print(squared_odds)
+
+
+#10  Check Prime Numbers
+
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+
+result = ["Prime" if is_prime(num) else "Not Prime" for num in numbers]
+print(result)
+
