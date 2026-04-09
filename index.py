@@ -1,6 +1,6 @@
 # # name = "faraz"
 # # print (name)
-##---asignment 01-----***
+#---asignment 01-----***
 # education = int (input ("Enter Your Education: "))
 # age = int (input ("Enter Your Age: "))
 # height = int (input ("Enter Your height: "))
@@ -22,7 +22,7 @@
 # n=int(input("Enter Even Number: "))
 
 # for i in range (0,21, 2):
-    # print(f"{i} x {i} = {n**i} " )
+#     print(f"{i} x {i} = {n**i} " )
 # Task 01
 ##---asignment 02-----***
 
@@ -34,16 +34,16 @@
 # del empty
 # print(empty)
 
- ##---asignment 03-----***
+#  #---asignment 03-----***
 
 # print(len(cities))
 
- ##---asignment 04-----***
+#  #---asignment 04-----***
 
 # cities.insert(1,"Mianwali")
 # print(cities)
 
- ##---asignment 05-----***
+#  #---asignment 05-----***
 # numbers= [0,1,2,3,4,5,6,7,8,9]
 # print(numbers[-4:])
 
@@ -297,18 +297,53 @@
 # s=("Clean" if u in tup else "Not clean" )
 # print(s)
 
-    
-M = input("Enter your Math: " )
-C = input("Enter your Compter: " )
-E = input("Enter your English: " )
-I = input("Enter your Islamic Studies: " )
-B = input("Enter your Bio: " )
-print(f"{M},{C},{E},{I},{B}")
-s =[]
-s.append(f"{M},{C},{E},{I},{B}")
-s=tuple(s)
-#print(s)
-result=("Fail" if i<70 else "pass" for i in s )
-print(result)
+# Assignment
 
- 
+# M = input("Enter your Math: " )
+# C = input("Enter your Compter: " )
+# E = input("Enter your English: " )
+# I = input("Enter your Islamic Studies: " )
+# B = input("Enter your Bio: " )
+# print(f"{M},{C},{E},{I},{B}")
+# s =[]
+# s.append(f"{M},{C},{E},{I},{B}")
+# s=tuple(s)
+# #print(s)
+# result=("Fail" if i<70 else "pass" for i in s )
+# print(result)
+
+# num = tuple(map(int, input("Enter Marks"))).split()
+# print(num)
+
+# cities = ["lahore", "karachi", "jaranwala"]
+# city = "Mianwali"
+# for city in cities:
+#   if city in cities:
+#     print("City is clean")
+#     break
+#   else:
+#     print("City is not clean")
+#     break
+# ##Assignment
+# Fname = ["Oman","wahaj","ali"]
+# Lname = ["Naeem","Ahmad","Akram"]
+# for i in range(len(Fname)):
+#   print(Fname[i],Lname[i])
+# #extend
+# Fname.extend(Lname)
+# print(Fname,Lname)
+# tup1 = (2,4,6)
+# tup2 = (1,5,7)
+# L=[]
+# L.append(tup1)
+# L.append(tup2)
+# print(L)
+##Tuples
+# tup = ()
+# T=list(tup)
+# T.append([1,2])
+# T.append([3,4])
+# T.append([5,6])
+# tup2 = tuple(T)
+# print(tup2)
+
